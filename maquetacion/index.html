@@ -5,9 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xacademy Clase 1 maquetacion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
+        html {
+            font-family: 'Inter', sans-serif;
+        }
         body {
             margin: 0;
+            background-image: url(https://technologywithpurpose.org/wp-content/uploads/2022/11/twp-home.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #header-left {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .icono {
+            width: 12.25px;
+            height: 14px;
+            padding: 13px;
         }
         p {
             margin-right: 40px;
@@ -18,19 +36,31 @@
         }
         button.redondo {
             background-color: white;
-            border: 1px solid black;
+            border: 2px solid black;
             border-radius: 25px;
-            padding: 0px 20px;
-            height: 32px;
+            margin: 0 10px;
+            padding: 10px 20px;
+            height: 40px;
+        }
+        h1 {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        #introduction-text {
+            padding: 70px 30px;
         }
         div#introduction-actions {
             display: flex;
             justify-content: center;
         }
+        #btn-sum-col {
+            border-color: #6b53f0;
+            color: #6b53f0;
+        }
     </style>
 </head>
 <body>
-    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
+    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 30px; justify-content: space-between; background-color: white;">
         <div id="header-left">
             <img src="logo.svg">
         </div>
@@ -41,6 +71,8 @@
             <p>Alianzas</p>
             <p>Contacto</p>
             <button class="redondo">Sumate +</button>
+            <img class="icono" src="./icons/instagram.svg" alt="Icono de instagram">
+            <img class="icono" src="./icons/linkedin-in.svg" alt="Icono de LinkedIn">
         </div>
     </div>
     <div id="introduction" style="padding: 48px;">
@@ -49,7 +81,7 @@
         </div>
         <div id="introduction-actions" style="margin-top: 25px;">
             <button class="redondo">Contactanos -></button>
-            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
+            <button class="redondo" id="btn-sum-col"  style="margin-left: 14px;">Sumate +</button>
         </div>
     </div>
 </body>
