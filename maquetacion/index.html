@@ -14,9 +14,6 @@
         }
         body {
             margin: 0;
-            background-image: url(https://technologywithpurpose.org/wp-content/uploads/2022/11/twp-home.jpg);
-            background-size: cover;
-            background-attachment: fixed;
         }
         #header-left {
             display: flex;
@@ -48,6 +45,7 @@
         }
         #introduction-text {
             padding: 70px 30px;
+            background-color: white;
         }
         div#introduction-actions {
             display: flex;
@@ -57,6 +55,35 @@
             border-color: #6b53f0;
             color: #6b53f0;
         }
+
+        #impacto {
+            background-color: #201b24;
+            color: #FFFFFF;
+            height: 200px;
+            padding: 110px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #foto {
+            width: 100vw;
+        }
+
+        footer {
+            background-color: #201b24;
+            color: #D9D9D9;
+            padding: 60px 30px 40px 30px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
     </style>
 </head>
 <body>
@@ -71,8 +98,8 @@
             <p>Alianzas</p>
             <p>Contacto</p>
             <button class="redondo">Sumate +</button>
-            <img class="icono" src="./icons/instagram.svg" alt="Icono de instagram">
-            <img class="icono" src="./icons/linkedin-in.svg" alt="Icono de LinkedIn">
+            <img class="icono" src="./img/icons/instagram.svg" alt="Icono de instagram">
+            <img class="icono" src="./img/icons/linkedin-in.svg" alt="Icono de LinkedIn">
         </div>
     </div>
     <div id="introduction" style="padding: 48px;">
@@ -84,5 +111,36 @@
             <button class="redondo" id="btn-sum-col"  style="margin-left: 14px;">Sumate +</button>
         </div>
     </div>
+
+    <div id="impacto">
+        <div id="impacto-left">
+        <h2>. Impacto</h2>
+        <p>Buscamos construir alianzas y fortalecer vínculos para generar una transformación real en la comunidad. Trabajamos para acercar la tecnología innovadora y disruptiva del sector privado hacia el sector social.</p>
+        </div>
+
+        <div id="impacto-right">
+        <p>58 Localidades +50 Mentores 301 Participantes</p>        
+        </div>
+    </div>
+
+    <div>
+        <img id="foto" src="https://technologywithpurpose.org/wp-content/uploads/2022/11/twp-home.jpg" alt="foto">
+    </div>
+
+    <footer>
+
+        <div class="footer-container">
+          
+            <img src="./img/technology-with-purpose-white.svg" alt="logo">
+            <p>Trabajamos para acercar la tecnología innovadora y disruptiva del sector privado hacia el sector social.</p>
+            <h3>NOSOTROS</h3> 
+            <h3>CONTACTO</h3>
+            <h3>PROGRAMAS</h3>
+            <h3>CAPACITACIONES</h3>
+            <h3>INSTAGRAM</h3>
+            <h3>LINKEDIN</h3>
+        </div>
+      </footer>
+      
 </body>
 </html>
